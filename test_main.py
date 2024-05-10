@@ -1,0 +1,5 @@
+import pytest
+import main
+
+def test_data_from_file_extraction():
+    assert main.data_from_file_extraction("tabell.csv") == {'': ['', 'KPI Totalindeks', 'Matvarer og alkoholfrie drikkevarer', 'Alkoholholdige drikkevarer og tobakk', 'KlÃ¦r og skotÃ¸y', 'Bolig lys og brensel', 'MÃ¸bler husholdningsartikler og vedlikehold av innbo', 'Helsepleie', 'Transport', 'Post- og teletjenester', 'Kultur og fritid', 'Utdanning', 'Hotell- og restauranttjenester', 'Andre varer og tjenester', '', 'KPI-JAE Totalindeks', '', 'KPI etter leveringssektor', 'Varer', 'Tjenester', 'Tjenester hvor arbeidskraft dominerer'], 'Indeks': ['Mars 2024', 1326.0, 1258.0, 1264.0, 1060.0, 1370.0, 1407.0, 1266.0, 1374.0, 1248.0, 1416.0, 1376.0, 1393.0, 1219.0, '', 1284.0, '', '', 1353.0, 1294.0, 1310.0], 'MÃ¥nedsendring (prosent)': ['Februar 2024 - Mars 2024', 2.0, -19.0, -1.0, 27.0, 6.0, 7.0, 6.0, 4.0, -1.0, -4.0, 0.0, 7.0, 2.0, '', 2.0, '', '', -2.0, 5.0, 3.0], '12-mÃ¥neders endring (prosent)\n': ['Mars 2023 - Mars 2024\n', 39.0, 61.0, 58.0, 38.0, 25.0, 29.0, 45.0, 16.0, 14.0, 80.0, 54.0, 37.0, 30.0, '\n', 45.0, '\n', '\n', 27.0, 49.0, 38.0]}

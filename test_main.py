@@ -9,4 +9,7 @@ def test_oppgave_1_lavest():
 
 def test_oppgave_1_høyest():
     assert main.oppgave_1_høyest(main.data_from_file_extraction("konsumprisindeks.csv")) == "Høyest konsumprisindeks: 125.6\nMåned: Sep\nÅr: 2022.0"
-    
+
+def test_oppgave_3_kalkulator():
+    n = 0.001
+    assert main.oppgave_3_kalkulator(main.data_from_file_extraction("konsumprisindeks.csv"), 2020, 2021, 112) < 116+n and main.oppgave_3_kalkulator(main.data_from_file_extraction("konsumprisindeks.csv"), 2020, 2021, 112) > 116-n
